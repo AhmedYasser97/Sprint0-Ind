@@ -1,0 +1,75 @@
+$ cd /d
+
+$ ls
+
+$ cd Sprint0Ind/
+
+$ ls
+
+$ git init
+
+$ git commit -m "Commit after initialize"
+
+$ git add 1.1.txt
+
+$ git status
+
+$ git add 3.1.txt
+
+$ git add 5.1.txt
+
+$ git status
+
+$ git commit -m "Commit after adding"
+
+$ git rm 3.1.txt
+
+$ git status
+
+$ git commit -m "Commit after deletion"
+
+$ git rev-list -n 1 HEAD -- 3.1.txt
+
+$ git checkout 5086bfce7b391f752122dd121c5d1abe8d3dbbca^ -- 3.1.txt
+
+$ git status
+
+$ git commit -m "Commit after returning deleted file"
+
+$ git remote add githubrepo https://github.com/AhmedYasser97/Sprint0-Ind.git
+
+$ git remote
+
+$ git status
+
+$ git push -u githubrepo master
+
+$ echo “i.GitHub , ii.The repo has 3 text files. 1st text file has chapter 1.1 from the book. 2nd text file has chapter 3.1. 3rd one has chapter 5.1. , iii.Ahmed Yasser 37-2714 , iv.Chacon, Scott, and Ben Straub.Pro Git.Apress, 2014” > README.md
+
+$ git commit -m "Commit after making the ReadMe"
+
+$ git branch ReadMe
+
+$ git checkout ReadMe
+
+$ git commit -m "Commit after making branch"
+
+$ git add README.md
+
+$ git commit -m "Commit after adding ReadMe"
+
+$ git push -u githubrepo ReadMe
+
+$ git commit -m "Commit after pushing the ReadMe file"
+
+$ git checkout master
+
+$ git merge ReadMe
+
+$ git add AllMyCommands.txt
+
+$ git commit -m "Commit after adding the AllMyCommands"
+
+$ git push -u githubrepo master
+
+$ git commmit -m "Commit after pushing the AllMyCommands"
